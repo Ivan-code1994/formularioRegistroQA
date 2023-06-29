@@ -20,7 +20,7 @@ public class formularioRegistroSteps {
         formularioRegistro.llenarCorreo("mail@mail.com");
         formularioRegistro.llenarDireccion("direccion1");
     }
-    @And("^mostrar los datos del formulario$")
+    @And("^validar correo electronico$")
     public void mostrarFormularioCapturado(){
         formularioRegistro.clickBotonFormulario();
         formularioRegistro.mostrarTextoCapturado("mail@mail.com");
